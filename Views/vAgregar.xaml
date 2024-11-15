@@ -5,8 +5,25 @@
              Title="vAgregar">
     <VerticalStackLayout>
         <Label 
-            Text="agregar!"
+            Text="Agregar Estudiantes!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Entry x:Name="txtNombre"
+               Placeholder="Ingrese Nombre"/>
+
+        <Entry x:Name="txtApellido"
+               Placeholder="Ingrese Apellido"/>
+        
+        <Entry x:Name="txtEdad"
+               Placeholder="Ingrese Edad"
+               MaxLength="2"
+               Keyboard="Numeric"/>
+
+        <Button x:Name="btnGuardar"
+                Text="Guardar"
+                Clicked="btnGuardar_Clicked"/>
+
+
     </VerticalStackLayout>
 </ContentPage>

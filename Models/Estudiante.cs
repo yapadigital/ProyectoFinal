@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace jcardenasS6.Models
 {
-    internal class Estudiante
+    public class Estudiante
     {
 
         

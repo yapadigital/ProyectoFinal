@@ -5,7 +5,7 @@
              Title="vEstudiante">
     <VerticalStackLayout>
                 <Label 
-            Text="Semana 6 - Consumo de servicio web - GET"
+            Text="Semana 7 - Consumo de servicio web - CRUD COMPLETO"
             FontSize="20"
             HorizontalTextAlignment="Center"/>
        
@@ -48,7 +48,7 @@
            
         </Grid>
        
-        <ListView x:Name="lvEstudiantes">
+        <ListView x:Name="lvEstudiantes" ItemSelected="lvEstudiantes_ItemSelected_1">
                <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

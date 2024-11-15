@@ -6,7 +6,7 @@ namespace jcardenasS6.Views;
 
 public partial class vEstudiante : ContentPage
 {
-	private const string Url = "http://192.168.85.44/uisraelws/estudiante.php";
+	private const string Url = "http://localhost/uisraelws/estudiante.php";
 	private readonly HttpClient cliente = new HttpClient();
 	private ObservableCollection<Estudiante> estud;
 
@@ -32,8 +32,15 @@ public partial class vEstudiante : ContentPage
 
     private void btnAgregar_Clicked(object sender, EventArgs e)
     {
-	//Navigation.PushAsync(new vAgregar());
+	Navigation.PushAsync(new vAgregar());
 		
+
+    }
+
+    private void lvEstudiantes_ItemSelected_1(object sender, SelectedItemChangedEventArgs e)
+    {
+		var objES =(Estudiante)e.SelectedItem;
+		Navigation.PushAsync(new vActualizarEliminar(objES));	
 
     }
 }
