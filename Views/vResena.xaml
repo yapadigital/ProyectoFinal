@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcardenasS6.Views.vResena"
+             >
+    <VerticalStackLayout>
+
+        <Image Source="turisteo_up.png"
+        HorizontalOptions="Center"
+ HeightRequest="40"
+ 
+ />
+        <Label 
+      Text="Reseñas"
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+
+        <Entry x:Name="txtNombre"
+         Placeholder="Ingrese tu Nombre"/>
+
+        <Entry x:Name="txtApellido"
+         Placeholder="Ingresetu reseña"/>
+
+        <Entry x:Name="txtEdad"
+         Placeholder="Ingresa tu puntuación (1-5)"
+         MaxLength="1"
+         Keyboard="Numeric"/>
+
+        <Button x:Name="btnGuardarR"
+          Text="Enviar Reseña"
+                BackgroundColor="CadetBlue"
+          Clicked="btnGuardarR_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

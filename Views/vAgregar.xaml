@@ -21,7 +21,10 @@
                Keyboard="Numeric"/>
 
         <Button x:Name="btnGuardar"
-                Text="Guardar"
+                Text="Enviar Reseña"
+                BackgroundColor="CadetBlue"
+                HeightRequest="30"
+                WidthRequest="150"
                 Clicked="btnGuardar_Clicked"/>
 
 

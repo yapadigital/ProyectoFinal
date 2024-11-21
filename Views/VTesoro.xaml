@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcardenasS6.Views.VTesoro"
+             >
+    <VerticalStackLayout Padding="30" Spacing="30">
+        <Image Source="turisteo_up.png"
+        HorizontalOptions="Center"
+ HeightRequest="40"
+ 
+ />
+
+        <Image Source="como_llegar.png"
+HeightRequest="250"/>
+
+        <Button x:Name="btnEncontrarT"
+ BackgroundColor="CadetBlue"
+ Text="Deja tu reseña"
+ HeightRequest="30"
+ WidthRequest="250"
+ Clicked="btnEncontrarT_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

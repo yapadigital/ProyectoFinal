@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcardenasS6.Views.IntroT"
+             >
+    <VerticalStackLayout Padding="20" Spacing="30">
+        <Label 
+            Text="Bienvenidos"
+            TextColor="CadetBlue"
+            FontSize="26"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image Source="turisteo_app.png"
+               HeightRequest="250"/>
+
+        <Button x:Name="btnIngresar"
+                BackgroundColor="CadetBlue"
+                Text="Ingresar"
+                HeightRequest="30"
+                WidthRequest="250"
+                Clicked="btnIngresar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

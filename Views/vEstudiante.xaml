@@ -2,47 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcardenasS6.Views.vEstudiante"
-             Title="vEstudiante">
-    <VerticalStackLayout>
-                <Label 
-            Text="Semana 7 - Consumo de servicio web - CRUD COMPLETO"
-            FontSize="20"
-            HorizontalTextAlignment="Center"/>
-       
+             >
+    
+    
+    <VerticalStackLayout Padding="30" Spacing="30">
 
-            <Grid Margin="10" Padding="10" BackgroundColor="CadetBlue">
+        <Image Source="turisteo_up.png"
+        HorizontalOptions="Center"
+ HeightRequest="40"
+ 
+ />
+
+        <Grid Margin="10" Padding="10" BackgroundColor="CadetBlue">
                       
             <Grid.RowDefinitions>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                                        <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Label Text="Código"
+                               <Label Text="Nombre"
             FontSize="14"
             Grid.Column="0"
             Grid.Row="0"
-                   FontAttributes="Bold"
-                       
-                       />
-
-                <Label Text="Nombre"
+                   FontAttributes="Bold"/>
+                <Label Text="Reseña"
             FontSize="14"
             Grid.Column="1"
             Grid.Row="0"
                    FontAttributes="Bold"/>
-                <Label Text="Apellido"
+                <Label Text="Valoración (1-5)"
             FontSize="14"
             Grid.Column="2"
-            Grid.Row="0"
-                   FontAttributes="Bold"/>
-                <Label Text="Edad"
-            FontSize="14"
-            Grid.Column="3"
              Grid.Row="0"
                    FontAttributes="Bold"/>
            
@@ -62,26 +56,23 @@
                                 </Grid.RowDefinitions>
 
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
+                                   
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
-                                <Label x:Name="lblCodigo" Text="{Binding codigo}"
-                                Grid.Column="0"
-                                Grid.Row="1"
-                                 />
+                               
                                 <Label x:Name="lblNombre" Text="{Binding nombre}"
-                                 Grid.Column="1"
+                                 Grid.Column="0"
                                  Grid.Row="1"
                                   />
                                 <Label x:Name="lblApellido" Text="{Binding apellido}"
-                                 Grid.Column="2"
+                                 Grid.Column="1"
                                   Grid.Row="1"
                                  />
 
                                 <Label x:Name="lblEdad" Text="{Binding edad}"
-                                Grid.Column="3"
+                                Grid.Column="2"
                                  Grid.Row="1"
                                  />
 
@@ -94,7 +85,10 @@
 
         </ListView>
         <Button x:Name="btnAgregar"
-        Text="Agregar"
+        Text="Volver al Mapa"
+                BackgroundColor="CadetBlue"
+                HeightRequest="30"
+                WidthRequest="180"
         Clicked="btnAgregar_Clicked"/>
 
     </VerticalStackLayout>

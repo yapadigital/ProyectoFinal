@@ -32,8 +32,8 @@ public partial class vEstudiante : ContentPage
 
     private void btnAgregar_Clicked(object sender, EventArgs e)
     {
-	Navigation.PushAsync(new vAgregar());
-		
+	//Navigation.PushAsync(new vAgregar());
+        Navigation.PushAsync(new vMapa ());
 
     }
 
